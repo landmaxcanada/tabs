@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head>
+  <title>Landmax Tabs Webview</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+
+  <link rel="import" href="../bower-components/core-icons/core-icons.html">
+  <link rel="import" href="../bower-components/font-roboto/roboto.html">
+  <link rel="import" href="../bower-components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="../bower-components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="../bower-components/core-media-query/core-media-query.html">
+  <link rel="import" href="../bower-components/paper-icon-button/paper-icon-button.html">
+
+  <style shim-shadowdom="">
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+      color: #333;
+    }
+
+    body.core-narrow {
+      padding: 8px;
+    }
+
+    paper-tabs, core-toolbar {
+      background-color: #00bcd4;
+      color: #fff;
+      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    core-toolbar paper-tabs {
+      box-shadow: none;
+    }
+
+    paper-tabs[noink][nobar] paper-tab.core-selected {
+      color: #ffff8d;
+    }
+
+    paper-tabs.transparent-teal {
+      background-color: transparent;
+      color: #00bcd4;
+      box-shadow: none;
+    }
+
+    paper-tabs.transparent-teal::shadow #selectionBar {
+      background-color: #00bcd4;
+    }
+
+    paper-tabs.transparent-teal paper-tab::shadow #ink {
+      color: #00bcd4;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+  </style>
+
+</head>
+<body unresolved="">
+
+<core-toolbar>
+  <paper-tabs id="scrollableTabs" selected="0" scrollable="">
+    <paper-tab>Landmax</paper-tab>
+    <paper-tab>Realtor.ca</paper-tab>
+    <paper-tab>Google Map</paper-tab>
+    <paper-tab>Assessment</paper-tab>
+    <paper-tab>FIFTH</paper-tab>
+    <paper-tab>THE SIXTH TAB</paper-tab>
+    <paper-tab>NUMBER SEVEN</paper-tab>
+    <paper-tab>EIGHT</paper-tab>
+    <paper-tab>NUMBER NINE</paper-tab>
+    <paper-tab>THE TENTH</paper-tab>
+    <paper-tab>THE ITEM ELEVEN</paper-tab>
+    <paper-tab>TWELFTH ITEM</paper-tab>
+  </paper-tabs>
+  </core-toolbar>
+
+  <!-- detect when window is narrow -->
+  <core-media-query id="mediaQuery" query="max-width: 640px"></core-media-query>
+
+  <script src="js/tabs.js"></script>
+
+</body></html>
