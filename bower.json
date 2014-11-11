@@ -1,0 +1,21 @@
+{
+  "name": "Landmax_Tabs_Testing",
+  "description": "Tabs with Webviews",
+  "homepage": "",
+  "keywords": [
+    "webcomponents"
+  ],
+  "author": "James Swansburg",
+  "license": "BSD",
+  "ignore": [],
+  "dependencies": {
+    "core-drawer-panel": "Polymer/core-drawer-panel#master",
+    "core-icons": "Polymer/core-icons#master",
+    "core-selector": "Polymer/core-selector#master",
+    "core-toolbar": "Polymer/core-toolbar#master",
+    "core-media-query": "Polymer/core-media-query#master",
+    "font-roboto": "Polymer/font-roboto#master",
+    "paper-icon-button": "Polymer/paper-icon-button#master",
+    "paper-ripple": "Polymer/paper-ripple#master"
+  }
+}
